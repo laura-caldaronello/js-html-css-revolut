@@ -58,17 +58,36 @@ header {
     align-items: center;
     position: relative;
 }
+#nav-right > ul > li:hover {
+    cursor: pointer;
+}
 
 #nav-right .ms-menu-mouseover {
+    display: none;
     position: absolute;
     top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    background-color: lightcyan;
 }
 #nav-right .ms-menu-mouseover > ul {
     display: flex;
     flex-direction: column;
 }
+#nav-right .ms-menu-mouseover > ul > li {
+    margin: 10px;
+}
 
 /* /id o selettori specifici */
+
+/* cose che vanno scritte dopo perchè vanno a sovrascrivere */
+
+#nav-right .active-block { /* tengo lo stesso livello di specificità della caratteristica che vado a modificare. ho voluto inserire tutto in un id perchè penso che questo tipo di menu per certi versi sia unico */
+    display: block;
+}
+
+/* /cose che vanno scritte dopo perchè vanno a sovrascrivere */
 
 /* mediaquery */
 
