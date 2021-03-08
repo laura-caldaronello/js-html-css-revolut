@@ -1,0 +1,50 @@
+/* selettori preliminari */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* /selettori preliminari */
+
+/* classi generiche */
+
+.container {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: yellow;
+}
+
+ul.ms-ul-nostyle {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+ul.ms-ul-nostyle > li:not(:last-child) {
+    margin-right: 10px;
+}
+
+ul.ms-ul-uppercase > li {
+    text-transform: uppercase;
+}
+
+/* /classi generiche */
+
+/* id o selettori specifici */
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* /id o selettori specifici */
+
+/* mediaquery */
+
+
+
+/* /mediaquery */
