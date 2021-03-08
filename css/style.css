@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 
 /* /selettori preliminari */
@@ -65,6 +66,10 @@ header {
     height: 80px;
 }
 
+#nav-left li:nth-child(2) a {
+    color: black;
+}
+
 [id^='nav-'] > ul > li {
     display: flex;
     align-items: center;
@@ -102,7 +107,7 @@ header {
 }
 #nav-right .ms-tag-new {
     color: rgb(235 0 141);
-    font-weight: bold;
+    font-weight: 700;
 }
 
 /* /id o selettori specifici */
