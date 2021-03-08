@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* /selettori preliminari */
 
 /* classi generiche */
@@ -21,7 +25,7 @@ ul.ms-ul-nostyle {
     display: flex;
     justify-content: space-between;
 }
-ul.ms-ul-nostyle > li > * {
+ul.ms-ul-nostyle > li > a {
     text-decoration: none;
     color: grey;
 }
@@ -39,6 +43,9 @@ ul.ms-ul-capitalize > li > * {
 button.ms-button {
     padding: 5px 10px;
     border-radius: 20px;
+    border: none;
+    background-color: rgb(235 0 141);
+    color: white;
 }
 
 /* /classi generiche */
@@ -49,11 +56,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
-    background-color: yellow;
+    height: 80px;
+    background-color: white;
+    font-size: 12px;
 }
 
-#nav-right > ul > li {
+#nav-left .logo {
+    height: 80px;
+}
+
+[id^='nav-'] > ul > li {
     display: flex;
     align-items: center;
     position: relative;
@@ -65,18 +77,32 @@ header {
 #nav-right .ms-menu-mouseover {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 150%;
     left: 50%;
     transform: translateX(-50%);
-    width: 200px;
-    background-color: lightcyan;
+    width: max-content;
+    box-shadow: 0 0 10px lightgrey;
+    background-color: white;
 }
 #nav-right .ms-menu-mouseover > ul {
     display: flex;
     flex-direction: column;
 }
 #nav-right .ms-menu-mouseover > ul > li {
+    position: relative;
     margin: 10px;
+    padding: 10px;
+}
+
+#nav-right .ms-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.75em;
+}
+#nav-right .ms-tag-new {
+    color: rgb(235 0 141);
+    font-weight: bold;
 }
 
 /* /id o selettori specifici */
