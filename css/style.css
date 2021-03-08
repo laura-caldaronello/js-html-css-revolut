@@ -14,7 +14,6 @@
     width: 80%;
     height: 100vh;
     margin: 0 auto;
-    background-color: yellow;
 }
 
 ul.ms-ul-nostyle {
@@ -22,12 +21,24 @@ ul.ms-ul-nostyle {
     display: flex;
     justify-content: space-between;
 }
-ul.ms-ul-nostyle > li:not(:last-child) {
+ul.ms-ul-nostyle > li > * {
+    text-decoration: none;
+    color: grey;
+}
+ul.ms-ul-nostyle > li:not(:last-child) > * {
     margin-right: 10px;
 }
 
-ul.ms-ul-uppercase > li {
+ul.ms-ul-uppercase > li > * {
     text-transform: uppercase;
+}
+ul.ms-ul-capitalize > li > * {
+    text-transform: capitalize;
+}
+
+button.ms-button {
+    padding: 5px 10px;
+    border-radius: 20px;
 }
 
 /* /classi generiche */
@@ -37,9 +48,25 @@ ul.ms-ul-uppercase > li {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: yellow;
 }
 
+#nav-right > ul > li {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
 
+#nav-right .ms-menu-mouseover {
+    position: absolute;
+    top: 100%;
+}
+#nav-right .ms-menu-mouseover > ul {
+    display: flex;
+    flex-direction: column;
+}
 
 /* /id o selettori specifici */
 
